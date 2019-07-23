@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { CircularProgress } from "@material-ui/core";
 import Info from "./components/info";
 import WeatherForm from "./components/form";
 import VacancyList from "./components/VacancyList";
@@ -44,7 +45,13 @@ class App extends React.Component {
 
     return (
       <div className="container">
-        {loading ? "Идет загрузка..." : <VacancyList items={vacancies} />}
+        {loading ? (
+          <div className="loader-wrapper">
+            <CircularProgress className="loader" />
+          </div>
+        ) : (
+          <VacancyList items={vacancies} />
+        )}
 
         <WeatherForm wMet={this.getWeather} {...weatherProps} />
       </div>

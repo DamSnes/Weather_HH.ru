@@ -36,3 +36,11 @@
   justify-content: flex-end;
   width: 245px;
 }
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: calc(100vh - 60px);
+}
