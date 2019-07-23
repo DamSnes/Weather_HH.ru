@@ -1,0 +1,38 @@
+.weatherTitle {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.info {
+  display: flex;
+  background-color: #adffd9;
+  border-style: dashed;
+  padding: 2px 20px;
+
+  margin-top: 19px;
+  position: absolute;
+}
+
+.info ul {
+  padding-left: 0;
+}
+
+.vacansy {
+  display: flex;
+  justify-content: flex-end;
+  width: 91%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 245px;
+}
