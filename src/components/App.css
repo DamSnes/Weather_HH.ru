@@ -9,8 +9,7 @@
   background-color: #adffd9;
   border-style: dashed;
   padding: 2px 20px;
-
-  margin-top: 19px;
+  margin-top: 30px;
   position: absolute;
 }
 
@@ -35,6 +34,9 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 245px;
+  margin-top: -58px;
+
+  
 }
 
 .loader-wrapper {
@@ -43,4 +45,16 @@
   align-items: center;
   width: 40%;
   height: calc(100vh - 60px);
+}
+
+.header {
+  display: flex;
+  background: linear-gradient(45deg, #fe9e96, #7f4f73);
+  height: 77px;
+}
+
+.button-sort {
+  display: flex;
+  height: 40px;
+  margin-top: 2%;
 }

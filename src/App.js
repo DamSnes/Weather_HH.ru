@@ -4,7 +4,7 @@ import { CircularProgress } from "@material-ui/core";
 import Info from "./components/info";
 import WeatherForm from "./components/form";
 import VacancyList from "./components/VacancyList";
-
+import Button from "@material-ui/core/Button";
 import { getWheatherData } from "./sources/wheather";
 import { getVacancies } from "./sources/headhunter";
 
@@ -38,12 +38,21 @@ class App extends React.Component {
       sunset: data.sys.sunset,
       error: ""
     });
+
+
   };
 
   render() {
     const { loading, vacancies, ...weatherProps } = this.state;
 
     return (
+      <>
+      <div className = "header">
+        <h1></h1>
+        <Button onClick = {this.filterItem} className = "button-sort" variant="contained" color="primary" type="submit">
+          сортировка
+        </Button>
+      </div>
       <div className="container">
         {loading ? (
           <div className="loader-wrapper">
@@ -55,6 +64,7 @@ class App extends React.Component {
 
         <WeatherForm wMet={this.getWeather} {...weatherProps} />
       </div>
+      </>
     );
   }
 }

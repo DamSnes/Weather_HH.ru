@@ -9,9 +9,8 @@ class Form extends React.Component {
 
     return (
       <form onSubmit={this.props.wMet} className="weather-form">
-        <h2>Погода</h2>
         <Button variant="contained" color="primary" type="submit">
-          Получить
+          Погода
         </Button>
         <WeatherData
           temp={temp}
