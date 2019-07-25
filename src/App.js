@@ -49,7 +49,7 @@ class App extends React.Component {
       <>
       <div className = "header">
         <h1></h1>
-        <Button onClick = {this.filterItem} className = "button-sort" variant="contained" color="primary" type="submit">
+        <Button className = "button-sort" variant="contained" color="primary" type="submit">
           сортировка
         </Button>
       </div>

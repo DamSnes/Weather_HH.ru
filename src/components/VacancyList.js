@@ -15,6 +15,7 @@ const VacancyList = props => {
 
   
   return (
+    <>
     <List>
       {items &&
         items.map(({ salary, name, id, area }) => (
@@ -25,11 +26,21 @@ const VacancyList = props => {
             <ListItemText
               primary={salary && (salary.from || salary.to)}
               secondary={name}
-              tertiary={area.name}
+
             />
+
+
+
+
           </ListItem>
         ))}
     </List>
+
+    <div className = "list">
+      <p>1</p>
+    </div>
+    </>
+
   );
 };
   

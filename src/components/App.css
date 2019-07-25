@@ -48,13 +48,21 @@
 }
 
 .header {
-  display: flex;
   background: linear-gradient(45deg, #fe9e96, #7f4f73);
   height: 77px;
 }
 
 .button-sort {
   display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  padding: 2px 20px;
+  margin-left: 30%;
+  margin-top: 15px;
   height: 40px;
-  margin-top: 2%;
+}
+
+.list {
+  background: #fe9e96;
+  width: 500px;
 }
