@@ -46,11 +46,11 @@
 }
 
 .header {
-  display: flex;
   background: linear-gradient(45deg, #fe9e96, #7f4f73);
   height: 77px;
 }
 
+<<<<<<< HEAD
 .list {
   margin: 0 auto;
   width: 1000px;
@@ -95,4 +95,19 @@
   font-size: 15px;
   color: #999999;
   margin: 5px;
+=======
+.button-sort {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  padding: 2px 20px;
+  margin-left: 30%;
+  margin-top: 15px;
+  height: 40px;
+}
+
+.list {
+  background: #fe9e96;
+  width: 500px;
+>>>>>>> 5d2cbd9aa9e246f23624e207260420bea59285b1
 }

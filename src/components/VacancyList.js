@@ -8,6 +8,7 @@ const VacancyList = props => {
   
 
   return (
+<<<<<<< HEAD
 
     <div className = "list">
       {items &&
@@ -43,6 +44,33 @@ const VacancyList = props => {
 
     </div>
   
+=======
+    <>
+    <List>
+      {items &&
+        items.map(({ salary, name, id, area }) => (
+          <ListItem key={id}>
+            <ListItemAvatar>
+              <Avatar />
+            </ListItemAvatar>
+            <ListItemText
+              primary={salary && (salary.from || salary.to)}
+              secondary={name}
+
+            />
+
+
+
+
+          </ListItem>
+        ))}
+    </List>
+
+    <div className = "list">
+      <p>1</p>
+    </div>
+    </>
+>>>>>>> 5d2cbd9aa9e246f23624e207260420bea59285b1
 
   );
 };

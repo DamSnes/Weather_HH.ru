@@ -26,8 +26,17 @@ class App extends React.Component {
 
     return (
       <>
+<<<<<<< HEAD
       
       <div className = "header"></div>
+=======
+      <div className = "header">
+        <h1></h1>
+        <Button className = "button-sort" variant="contained" color="primary" type="submit">
+          сортировка
+        </Button>
+      </div>
+>>>>>>> 5d2cbd9aa9e246f23624e207260420bea59285b1
       <div className="container">
         {loading ? (
           <div className="loader-wrapper">
