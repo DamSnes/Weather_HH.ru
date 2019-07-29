@@ -1,38 +1,51 @@
 import React from "react";
 import "./App.css";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import Avatar from "@material-ui/core/Avatar";
-import { arrayExpression } from "@babel/types";
-
-
 
 const VacancyList = props => {
   const { items } = props;
   console.log(props);
 
   
+
   return (
-    <List>
+
+    <div className = "list">
       {items &&
-        items.map(({ salary, name, id, area }) => (
-          <ListItem key={id}>
-            <ListItemAvatar>
-              <Avatar />
-            </ListItemAvatar>
-            <ListItemText
-              primary={salary && (salary.from || salary.to)}
-              secondary={name}
-              tertiary={area.name}
-            />
-          </ListItem>
-        ))}
-    </List>
+        items.map(({ salary, name, id, area, snippet }) => (
+          <div key={id}>
+
+          
+          <div className = "list-item">
+            
+            <div className = "vacancy-name">
+              <p>{name}</p>
+            </div>
+
+            <div className = "vacancy-text">
+              
+              {snippet.responsibility}
+            </div>
+
+            <div className = "vacancy-city">
+              {area.name}
+            </div>
+
+            <div className = "vacancy-salary">
+            {salary && (salary.from || salary.to)} руб.
+            </div>
+
+          </div>
+
+          </div>
+      ))}
+
+          
+
+    </div>
+  
+
   );
 };
   
-
 export default VacancyList;
 

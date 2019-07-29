@@ -17,7 +17,7 @@
   padding-left: 0;
 }
 
-.vacansy {
+.vacancy {
   display: flex;
   justify-content: flex-end;
   width: 91%;
@@ -35,8 +35,6 @@
   justify-content: flex-end;
   width: 245px;
   margin-top: -58px;
-
-  
 }
 
 .loader-wrapper {
@@ -53,8 +51,48 @@
   height: 77px;
 }
 
-.button-sort {
-  display: flex;
-  height: 40px;
-  margin-top: 2%;
+.list {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.list-item {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  font-size: 14px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background: #dddddd;
+}
+
+.vacancy-name {
+  flex-basis: 100%;
+  font-size: 30px;
+}
+
+.vacancy-salary {
+  flex: 0 0 auto;
+  margin-left: 15px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.vacancy-text {
+  font-size: 20px;
+}
+
+.vacancy-city {
+  font-size: 15px;
+  color: #999999;
+  margin: 5px;
 }
