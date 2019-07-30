@@ -10,3 +10,8 @@ export const getVacancyInfo = async id => {
   const { data } = await axios.get(`${BASE_URL}/vacancies/${id}`);
   return data;
 };
+
+export const vacanciesSearch = async vacancyName => {
+  const { data } = await axios.get(`${BASE_URL}/vacancies/?text=${vacancyName}`);
+  return data;
+};
