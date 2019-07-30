@@ -4,13 +4,13 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter, Route } from "react-router-dom";
 import VacancyList from "./components/VacancyList";
-import Vacancy from "./components/Vacancy";
+import vacancy from "./components/vacancy";
 
-ReactDOM.render((
-
+ReactDOM.render(
   <BrowserRouter>
-    <Route path="/" component={App}/>
-    <Route path="/Vacancy" component={Vacancy}/>
-  </BrowserRouter>
-    
- ), document.getElementById('root'))
+    <Route exact path="/" component={App} />
+    <Route path="/vacancy" component={vacancy} />
+  </BrowserRouter>,
+
+  document.getElementById("root")
+);

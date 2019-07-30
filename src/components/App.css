@@ -46,11 +46,11 @@
 }
 
 .header {
+  display: flex;
   background: linear-gradient(45deg, #fe9e96, #7f4f73);
   height: 77px;
 }
 
-<<<<<<< HEAD
 .list {
   margin: 0 auto;
   width: 1000px;
@@ -61,28 +61,29 @@
 .list-item {
   margin: 0 auto;
   width: 1000px;
-  padding: 0 20px;
   box-sizing: border-box;
   padding: 20px;
-  border: 1px solid #e7e7e7;
   position: relative;
   font-size: 14px;
-  border-style: solid;
+  border: 1px solid #e7e7e7;
   cursor: pointer;
-}
-
-.list-item:hover {
-  background: #dddddd;
+  text-decoration: none;
+  color: #000;
 }
 
 .vacancy-name {
+  text-decoration: none;
+  color: blue;
   flex-basis: 100%;
   font-size: 30px;
 }
 
+.vacancy-name :hover {
+  text-decoration: underline;
+}
+
 .vacancy-salary {
   flex: 0 0 auto;
-  margin-left: 15px;
   font-size: 20px;
   margin: 10px;
 }
@@ -95,19 +96,4 @@
   font-size: 15px;
   color: #999999;
   margin: 5px;
-=======
-.button-sort {
-  display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  padding: 2px 20px;
-  margin-left: 30%;
-  margin-top: 15px;
-  height: 40px;
-}
-
-.list {
-  background: #fe9e96;
-  width: 500px;
->>>>>>> 5d2cbd9aa9e246f23624e207260420bea59285b1
 }
