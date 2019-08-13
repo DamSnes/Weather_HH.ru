@@ -41,13 +41,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height: calc(100vh - 60px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
   display: flex;
   background: linear-gradient(45deg, #fe9e96, #7f4f73);
+  height: 77px;
+}
+.header-vacancy {
+  display: flex;
+  background: linear-gradient(45deg, #fd9d94, #7f4f73);
   height: 77px;
 }
 
@@ -66,7 +71,7 @@
   position: relative;
   font-size: 14px;
   border: 1px solid #e7e7e7;
-  cursor: pointer;
+
   text-decoration: none;
   color: #000;
 }
@@ -85,7 +90,7 @@
 .vacancy-salary {
   flex: 0 0 auto;
   font-size: 20px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .vacancy-text {
@@ -95,5 +100,74 @@
 .vacancy-city {
   font-size: 15px;
   color: #999999;
-  margin: 5px;
+  margin: 18px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  margin-left: auto;
+  position: absolute;
+  left: 735px;
+  bottom: 330px;
+  max-height: 300px;
+}
+
+.input {
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 300px;
+}
+
+.submitButton {
+  border: 1px solid grey;
+  background-color: #fd9d94;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton:hover {
+  background-color: #915983;
+}
+
+.button-back {
+  background-color: #d0784f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: #d0784f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  margin-left: auto;
 }

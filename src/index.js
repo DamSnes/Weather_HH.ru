@@ -6,11 +6,15 @@ import { BrowserRouter, Route } from "react-router-dom";
 import VacancyList from "./components/VacancyList";
 import vacancy from "./components/vacancy";
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Route exact path="/" component={App} />
-    <Route path="/vacancy" component={vacancy} />
-  </BrowserRouter>,
+class Main extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Route exact path="/" component={App} />
+        <Route path="/vacancy/:id" component={vacancy} />
+      </BrowserRouter>
+    );
+  }
+}
 
-  document.getElementById("root")
-);
+ReactDOM.render(<Main />, document.getElementById("root"));
