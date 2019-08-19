@@ -47,12 +47,12 @@
 
 .header {
   display: flex;
-  background: linear-gradient(45deg, #fe9e96, #7f4f73);
+  background: #333;
   height: 77px;
 }
 .header-vacancy {
   display: flex;
-  background: linear-gradient(45deg, #fd9d94, #7f4f73);
+  background: #333;
   height: 77px;
 }
 
@@ -70,37 +70,52 @@
   padding: 20px;
   position: relative;
   font-size: 14px;
-  border: 1px solid #e7e7e7;
-
+  font-family: Arial;
+  border: 0.5px solid #f1c846;
   text-decoration: none;
   color: #000;
 }
 
 .vacancy-name {
   text-decoration: none;
-  color: blue;
+  font-family: Arial;
+  color: #0099ff;
   flex-basis: 100%;
   font-size: 30px;
+  
+  display: flex;
+  
+}
+
+.block{
+  margin: 0px;
+}
+
+.block2{
+  margin-left: auto;
 }
 
 .vacancy-name :hover {
-  text-decoration: underline;
+  color: #d30000;
 }
 
 .vacancy-salary {
-  flex: 0 0 auto;
+  font-family: Arial;
   font-size: 20px;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .vacancy-text {
   font-size: 20px;
+  font-family: Arial;
 }
 
 .vacancy-city {
   font-size: 15px;
   color: #999999;
-  margin: 18px;
+  margin-bottom: 10px;
+  font-family: Arial;
+  margin-bottom: 15px;
 }
 
 .content {
@@ -109,18 +124,21 @@
   box-sizing: border-box;
   padding: 20px;
   position: relative;
-  font-size: 14px;
+  font-size: 17px;
   border: 1px solid #e7e7e7;
   text-decoration: none;
   color: #000;
+  font-family: Arial;
 }
 
 .logo {
-  margin-left: auto;
-  position: absolute;
-  left: 735px;
-  bottom: 330px;
-  max-height: 300px;
+  
+  
+}
+
+.text {
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .input {
@@ -131,43 +149,133 @@
 }
 
 .submitButton {
-  border: 1px solid grey;
-  background-color: #fd9d94;
-  border-radius: 5px;
   text-align: center;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
-  height: 40px;
+  height: 19px;
   width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: #40c781;
+  box-shadow: 0 -3px #35a76e inset;
+  transition: 0.2s;
 }
 
 .submitButton:hover {
-  background-color: #915983;
+  background: #35a76e;
 }
+
+.submitButton:active {
+  background: #21935a;
+  box-shadow: 0 3px #21935a inset;
+}
+
 
 .button-back {
-  background-color: #d0784f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  cursor: pointer;
-}
-
-.clear-button {
-  background-color: #d0784f;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80px;
-  height: 40px;
+  height: 23px;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  margin-left: 20px;
+  color: #ffffff; 
+  text-decoration: none; 
+  user-select: none;
+  background: #d44b38;
+  padding: .7em 1.5em;
+}
+
+.button-back:hover {
+  background: #e85f4c;
+}
+
+.button-back:active {
+  background: #980f00;
+}
+
+.clear-button {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 23px;
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;
   margin-left: auto;
+  color: #ffffff; 
+  text-decoration: none; 
+  user-select: none;
+  background: #d44b38;
+  padding: .7em 1.5em;
+}
+
+.clear-button:hover {
+  background: #e85f4c;
+}
+
+.clear-button:active {
+  background: #980f00;
+}
+
+.respond-content {
+  margin: 0 auto;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  font-size: 17px;
+  border: 1px solid #e7e7e7;
+  text-decoration: none;
+  color: #000;
+  font-family: Arial;
+}
+
+.respond-name {
+  color: #000;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.contacts {
+  font-family: Arial;
+  font-size: 20px;
+  margin: 10px
+}
+
+.input-contacts {
+  display: flex;
+  height: 20px;
+  width: 600px;
+}
+
+.respond-button {
+  width: 105px;
+  height: 23px;
+  color: #ffffff; 
+  text-decoration: none; 
+  user-select: none;
+  background: #40c781;
+  padding: .7em 1.5em;
+  
+}
+
+.respond-button:hover {
+  background: #37af73;
+}
+
+.respond-button:active {
+  background: #226944;
 }

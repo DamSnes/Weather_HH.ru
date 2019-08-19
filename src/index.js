@@ -5,6 +5,7 @@ import App from "./App";
 import { BrowserRouter, Route } from "react-router-dom";
 import VacancyList from "./components/VacancyList";
 import vacancy from "./components/vacancy";
+import respond from "./components/respond"
 
 class Main extends React.Component {
   render() {
@@ -12,6 +13,8 @@ class Main extends React.Component {
       <BrowserRouter>
         <Route exact path="/" component={App} />
         <Route path="/vacancy/:id" component={vacancy} />
+        <Route path="/respond" component={respond} />
+
       </BrowserRouter>
     );
   }

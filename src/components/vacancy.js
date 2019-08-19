@@ -3,9 +3,10 @@ import "./App.css";
 import { CircularProgress } from "@material-ui/core";
 import { getVacancyInfo, vacanciesSearch } from "../sources/headhunter";
 import { Link } from "react-router-dom";
+import { Respond } from "./respond";
 
 const DEFAULT_HH_IMG =
-  "https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png";
+  "https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png"
 
 class Vacancy extends React.Component {
   state = {
@@ -26,7 +27,7 @@ class Vacancy extends React.Component {
   render() {
     const {
       loading,
-      currentVacancy: { name, salary, area, description, employer }
+      currentVacancy: { name, salary, area, description, employer, experience }
     } = this.state;
     const { params } = this.props.location;
     return (
@@ -43,7 +44,7 @@ class Vacancy extends React.Component {
           </div>
         ) : (
           <div className="content">
-            <div className="vacancy-name">{name}</div>
+            <div className="vacancy-name"><p>{name}</p></div>
 
             <div className="vacancy-salary">
               {salary && (salary.from || salary.to)}
@@ -51,10 +52,10 @@ class Vacancy extends React.Component {
 
             <div>{area && area.name}</div>
 
-            <div dangerouslySetInnerHTML={{ __html: description }}></div>
+            <div>Требуемый опыт работы:{experience && experience.name}</div>
 
             <div className="logo">
-              <img
+              <img align="right" 
                 src={
                   (employer.logo_urls &&
                     (employer.logo_urls[240] || employer.logo_urls[120])) ||
@@ -62,6 +63,16 @@ class Vacancy extends React.Component {
                 }
               />
             </div>
+
+            <div dangerouslySetInnerHTML={{ __html: description }} className="text"></div>
+            
+            <Link className="respond-button"
+                to={{ pathname: `/respond`}}
+                >
+                Откликнуться
+                </Link>
+                
+            
           </div>
         )}
       </>
